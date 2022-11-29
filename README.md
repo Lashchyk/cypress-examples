@@ -1,6 +1,6 @@
-# Cypress Example Project
+# Cypress Example Project using page objects
 
-Cypress example project with using page objects for testing demo webpage - http://automationpractice.com/
+Basic Cypress example project with using page objects for testing demo webpage - http://automationpractice.com/
 
 ## Example tests
 
@@ -10,7 +10,7 @@ Cypress example project with using page objects for testing demo webpage - http:
 As a user I would like to search for a product `Summer dress` and be able to see results for it
 
 ```
-When I search for a Product: "summer dress"
+When I search for a Product: "Summer dress"
 Then some items are found
 ```
 
@@ -29,7 +29,7 @@ No items were found
 As a user I would like to filter for particular product and be able to see results for it
 
 ``` 
-When I filter for category: 'Evening dress' with size: 'S' and color: 'Pink'
+When I filter for category: "Evening dress" with size: "S" and color: "Pink"
 Then some items are found
 ```
 
@@ -38,7 +38,7 @@ Then some items are found
 
 As a logged in user I would like to purchase a product
 
-**Preconditions:**: 
+**Preconditions:** 
 
 created static user is used for scenario 3.1
 
@@ -65,11 +65,5 @@ And I proceed to checkout (up to the payment tab)
 - Install Cypress: `npm install cypress --save-dev`
 - Add your credentials to log in inside `cypress.config.js`
 - Run the tests:
-
-  Chrome `cypress run --browser chrome`
-
-  Firefox `cypress run --browser firefox`
-
-## Potential improvements
-- clean up the code (e.g. improve selectors; improve waits handling, as some test are flaky; handling of the user data (login and password env))
-- cucumber can be used to test different phrases for search and filter functionalities, if needed
+  - Chrome `cypress run --browser chrome`
+  - Firefox `cypress run --browser firefox`
